@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie-edge">
+	<link href="./style.css" type="text/css" rel="stylesheet" >
+	<title>Contact</title>
+</head>
+
+<body onload="renderTime();">
+	<!-- header: include logo and navigation -->
+	<div class="header">
+		<a href="./index.html"><img id="logo" src="./images/logo.png"/></a>
+		
+		<a class="pages" href="./index.html">Home</a>
+		<div class="dropdown">
+			<a class="dropbtn" href="javascript:void(0)">About</a>
+			<div class="options">
+				<a href="./company-background.html">Company Background</a>
+				<a href="./corporate-profile.html">Corporate Profile</a>
+				<a href="./company-policy.html">Company Health & Safety Policy</a>
+				<!--<a href="./customer-testimonial.html">Customer Testimonial</a>-->
+			</div>
+		</div>
+		<a class="pages" href="./services.html">Services</a>
+		<div class="dropdown">
+			<a class="dropbtn" href="./pest.html">Pest</a>
+			<div class="options">
+				<a href="./ants.html">Ants</a>
+				<a href="./bed-bugs.html">Bed Bugs</a>
+				<a href="./cockroaches.html">Cockroaches</a>
+				<a href="./flies.html">Flies</a>
+				<a href="./mosquitoes.html">Mosquitoes</a>
+				<a href="./rodents.html">Rodents</a>
+				<a href="./storage-pest.html">Storage Pest</a>
+				<a href="./termites.html">Termites</a>
+			</div>
+		</div>
+		<div class="dropdown">
+			<a class="dropbtn" href="javascript:void(0)">Contact</a>
+			<div class="options">
+				<a href="./contact-form.html">Enquiry</a>
+				<a href="./location.html">Location</a>
+				<a href="./career.html">Career</a>
+			</div>
+		</div>
+	</div>
+
+	<!--change headings/titles within the 'h1', 'h2', 'h3' tag-->
+	<h1>Contact Form</h1>
+
+	<img id="img" src="./images/CS2.png" />
+
+	<!--form powered by usebasin.com-->
+	<form accept-charset="UTF-8" action="https://usebasin.com/f/09e85164a7e0" 
+	method="post">
+		<p>Preferred method of communication:
+			<input type="radio" name="Preferred method of communication" id="Phone" 
+			value="Phone" checked="checked"/>
+			<label for="Phone">Phone</label>
+			<input type="radio" name="Preferred method of communication" id="Email" 
+			value="Email"/>
+			<label for="Email">Email</label>
+		</p>
+
+		<label>
+			<p>Preferred time of contact:
+				<input name="time" required="required"/>
+			</p>
+		</label>
+
+		<p>Title: 
+			<input type="radio" name="Title" id="Mr" value="Mr" checked="checked"/>
+			<label for="Mr">Mr</label>
+			<input type="radio" name="Title" id="Mrs" value="Mrs"/>
+			<label for="Mrs">Mrs</label>
+			<input type="radio" name="Title" id="Ms" value="Ms"/>
+			<label for="Ms">Ms</label>
+		</p>
+		<label>
+			<p>Name: 
+				<input name="Name" required="required"/>
+			</p>
+		</label>
+		<label>
+			<p>Email: 
+				<input type="email" name="Email" required="required"/>
+			</p>
+		</label>
+		<label>
+			<p>Contact number: 
+				<input name="Contact Number" placeholder="+60123456789"/>
+			</p>
+		</label>
+		<label>
+			<p>Enquiries:</p>
+			<textarea rows="5" columns="50" name="Enquiries" required="required"></textarea>
+		</label>
+		<p><input type="submit" style="background-color: #385464; width: 100px; height: 50px; 
+			border-radius: 5px; color: #efefef;"></p>
+	</form>
+
+	<!-- footer: include short links, claims and credits -->
+	<div class="footer">
+		<!-- real time clock (based on time set on device) -->
+		<div id="clock"></div>
+		
+		<p><a href="./company-background.html">Company Background</a> | <a href="./services.html">
+			Our Expertise</a> | <a href="./pest.html">General Pest</a> | 
+			<a href="./contact-form.html">Contact Us</a>
+		<br><br>
+		<i>This website can be viewed in Microsoft Edge, IE, Safari, Firefox and Google 
+			Chrome. It may, however, require Flash Plugin and javascript enabled.
+		<br>Copyright © 2018. Pest Link Sdn Bhd | All Rights Reserved</p></i>
+	</div>
+
+	<script>
+		function renderTime() {
+			var currentDate = new Date();
+			var year = currentDate.getYear();
+			if (year < 1000) {
+				year += 1900;
+			}
+			var month = currentDate.getMonth();
+			var date = currentDate.getDate();
+			var montharray = new Array("January", "February", "March", "April", "May", "June", 
+			"July", "August", "September", "October", "November", "December");
+
+			var currentTime = new Date()
+			var h = currentTime.getHours();
+			var m = currentTime.getMinutes();
+			var s = currentTime.getSeconds();
+			var session = "AM"
+			if(h == 24) {
+				h = 12;
+				session = "AM";
+			}
+
+			if (h == 12) {
+				session = "PM";
+			}
+
+			if (h > 12) {
+				h -= 12;
+				session = "PM";
+			}
+
+			if (h < 10) {
+				h = "0" + h;
+			}
+
+
+			if (m < 10) {
+				m = "0" + m;
+			}
+
+
+			if (s < 10) {
+				s = "0" + s;
+			}
+
+			var display = document.getElementById("clock");
+
+			display.innerText = montharray[month] + " " + date + ", " + year + " | " + h 
+			+ ":" + m + ":" + s + " " + session;
+			display.textContent = montharray[month] + " " + date + ", " + year + " | " + 
+			h + ":" + m + ":" + s + " " + session;
+			setTimeout("renderTime()", 1000);
+		}
+
+		renderTime();
+	</script>
+</body>
+</html>
