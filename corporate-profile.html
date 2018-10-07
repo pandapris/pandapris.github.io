@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie-edge">
+	<link href="./style.css" type="text/css" rel="stylesheet" >
+	<title>Corporate Profile</title>
+</head>
+
+<body onload="renderTime();">
+	<!-- header: include logo and navigation -->
+	<div class="header">
+		<a href="./index.html"><img id="logo" src="./images/logo.png"/></a>
+		
+		<a class="pages" href="./index.html">Home</a>
+		<div class="dropdown">
+			<a class="dropbtn" href="javascript:void(0)">About</a>
+			<div class="options">
+				<a href="./company-background.html">Company Background</a>
+				<a href="./corporate-profile.html">Corporate Profile</a>
+				<a href="./company-policy.html">Company Health & Safety Policy</a>
+				<!--<a href="./customer-testimonial.html">Customer Testimonial</a>-->
+			</div>
+		</div>
+		<a class="pages" href="./services.html">Services</a>
+		<div class="dropdown">
+			<a class="dropbtn" href="./pest.html">Pest</a>
+			<div class="options">
+				<a href="./ants.html">Ants</a>
+				<a href="./bed-bugs.html">Bed Bugs</a>
+				<a href="./cockroaches.html">Cockroaches</a>
+				<a href="./flies.html">Flies</a>
+				<a href="./mosquitoes.html">Mosquitoes</a>
+				<a href="./rodents.html">Rodents</a>
+				<a href="./storage-pest.html">Storage Pest</a>
+				<a href="./termites.html">Termites</a>
+			</div>
+		</div>
+		<div class="dropdown">
+			<a class="dropbtn" href="javascript:void(0)">Contact</a>
+			<div class="options">
+				<a href="./contact-form.html">Enquiry</a>
+				<a href="./location.html">Location</a>
+				<a href="./career.html">Career</a>
+			</div>
+		</div>
+	</div>
+
+	<!--change headings/titles within the 'h1', 'h2', 'h3' tag-->
+	<h1>Corporate Profile</h1>
+
+	<div class="content-container">
+		<h2 class="post-title">Managing Director</h2>
+		<!--update the DIRECT LINK within the src quote (source) 
+			to change the image-->
+		<img class="profile-img" src="./images/lumin.jpg" />
+		<div  class="content-box" style="height: 80%; bottom: 0px;">
+			<!-- . update text within the p quote
+				. to break paragraphs (enter) use <br> twice
+				. to form a new line use <br> once 
+				. remember to press enter when the line gets too long
+				to ensure readability -->
+			<p style="padding: 0px 10px 0px 160px;">Name: Liew Lu Min<br>
+				She has been in the Pest Control management for 15 years and she is an 
+				AFAS specialist.</p>
+		</div>
+	</div>
+	
+	<div class="content-container">
+		<h2 class="post-title">Company Consultant</h2>
+		<img class="profile-img" src="./images/tham.jpg" />
+		<div class="content-box" style="height: 80%; bottom: 0px;">
+			<p style="padding: 0px 10px 0px 160px;">Name: Tham Kon Shin<br>
+				Mr. Tham is a Licensed Fumigator, Licensed Pesticide Applicator and NIOSH trained. 
+				He has 20 years experience in Pest Control Industry and was one of the 
+				top management in his previous capacity.</p>
+		</div>
+	</div>
+
+	<div class="content-container">
+		<h2 class="post-title">Sales Manager</h2>
+		<img class="profile-img" src="./images/justin.jpg" />
+		<div class="content-box" style="height: 80%; bottom: 0px;">
+			<p style="padding: 0px 10px 0px 160px;">Name: Justin Tambud<br>
+				Mr. Justin is a Licensed Assistant Pesticide Applicator and been in the 
+				Sales Management of pest control for 21 years.</p>
+		</div>
+	</div>
+	
+	<div class="content-container">
+		<h2 class="post-title">Offshore Specialist</h2>
+		<img class="profile-img" src="./images/rashid.jpg" />
+		<div  class="content-box" style="height: 80%; bottom: 0px;">
+			<p style="padding: 0px 10px 0px 160px;">Name: Abdul Rashid Bin Husin<br>
+				Mr. Rashid is a licensed Assistant Pesticide Applicator and also an 
+				Off Shore Licensed Holder.  He started involvement in the business 11 years 
+				ago and is in charge of business development and new business venture. He is 
+				also AFAS Specialist.</p>
+		</div>
+	</div>
+
+	<!-- footer: include short links, claims and credits -->
+	<div class="footer">
+		<!-- real time clock (based on time set on device) -->
+		<div id="clock"></div>
+		
+		<p><a href="./company-background.html">Company Background</a> | <a href="./services.html">Our Expertise</a> | <a href="./pest.html">General Pest</a> | <a href="./contact-form.html">Contact Us</a>
+		<br><br>
+		<i>This website can be viewed in Microsoft Edge, IE, Safari, Firefox and Google Chrome. It may, however, require Flash Plugin and javascript enabled.
+		<br>Copyright © 2018. Pest Link Sdn Bhd | All Rights Reserved</p></i>
+	</div>
+
+	<script>
+		function renderTime() {
+			var currentDate = new Date();
+			var year = currentDate.getYear();
+			if (year < 1000) {
+				year += 1900;
+			}
+			var month = currentDate.getMonth();
+			var date = currentDate.getDate();
+			var montharray = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+
+			var currentTime = new Date()
+			var h = currentTime.getHours();
+			var m = currentTime.getMinutes();
+			var s = currentTime.getSeconds();
+			var session = "AM"
+			if(h == 24) {
+				h = 12;
+				session = "AM";
+			}
+
+			if (h == 12) {
+				session = "PM";
+			}
+
+			if (h > 12) {
+				h -= 12;
+				session = "PM";
+			}
+
+			if (h < 10) {
+				h = "0" + h;
+			}
+
+
+			if (m < 10) {
+				m = "0" + m;
+			}
+
+
+			if (s < 10) {
+				s = "0" + s;
+			}
+
+			var display = document.getElementById("clock");
+
+			display.innerText = montharray[month] + " " + date + ", " + year + " | " + h + ":" + m + ":" + s + " " + session;
+			display.textContent = montharray[month] + " " + date + ", " + year + " | " + h + ":" + m + ":" + s + " " + session;
+			setTimeout("renderTime()", 1000);
+		}
+
+		renderTime();
+	</script>
+</body>
+</html>
