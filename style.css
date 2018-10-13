@@ -172,6 +172,41 @@ form textarea {
 	}
 }
 
+#popup {
+    width: 28rem;
+    display: block;
+	top: 5%;
+	width: 90%;
+	height: 90%;
+    position: relative;
+    background-color: #efefef;
+    margin: auto;
+    border-style: solid;
+    border-color: #190065;
+    border-width: 10px;
+    border-radius: 5px;
+	z-index: 100;
+	overflow-y: scroll;
+}
+
+#popup h1 {
+    color: #190065;
+    font-family: "Calibri";
+    font-size: 2rem;
+    text-align: center;
+}
+
+#backdrop {
+    width: 100%; 
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);  
+    display: block;
+    top: 0;
+    left: 0;
+    position: fixed; 
+    z-index: 100; 
+}
+
 /* picture slideshow container */
 .container {
 	float: left;
