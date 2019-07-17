@@ -142,7 +142,6 @@ form textarea {
 
 .options a {
 	display: block;
-	/*float: none;*/
 	color: #efefef;
 	text-align: left;
 	text-transform: none;
@@ -173,11 +172,10 @@ form textarea {
 }
 
 #popup {
-    width: 28rem;
-    display: block;
-	top: 5%;
 	width: 90%;
 	height: 90%;
+    display: block;
+	top: 5%;
     position: relative;
     background-color: #efefef;
     margin: auto;
@@ -205,6 +203,12 @@ form textarea {
     left: 0;
     position: fixed; 
     z-index: 100; 
+}
+
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+	#popup img {
+		width: 90%;
+	}
 }
 
 /* picture slideshow container */
@@ -344,6 +348,7 @@ form textarea {
 
 	.subbox {
 		display: block;
+		height: 650px;
 		width: 100%
 	}
 }
@@ -484,6 +489,7 @@ form textarea {
 @media only screen and (min-width: 300px) and (max-width: 600px) {
 	.content-container {
 		margin: auto auto 50px auto;
+		height: 550px;
 	}
 
 	.content-container .content-box, 
@@ -520,8 +526,8 @@ form textarea {
 	}
 
 	.content-container .next {
-		top: 600px;
-		left: 43.3%;
+		top: 750px;
+		left: 40%;
 		color: #efefef;
 	}
 }
