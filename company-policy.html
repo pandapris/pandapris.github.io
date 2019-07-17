@@ -169,7 +169,7 @@
 		<p><a href="./company-background.html">Company Background</a> | <a href="./services.html">Our Expertise</a> | <a href="./pest.html">General Pest</a> | <a href="./contact-form.html">Contact Us</a>
 		<br><br>
 		<i>This website can be viewed in Microsoft Edge, IE, Safari, Firefox and Google Chrome. It may, however, require Flash Plugin and javascript enabled.
-		<br>Copyright © 2018. Pest Link Sdn Bhd | All Rights Reserved</p></i>
+		<br>Copyright © 2018 - <i id="year"></i>. Pest Link Sdn Bhd | All Rights Reserved</p></i>
 	</div>
 
 	<script>
@@ -215,6 +215,9 @@
 			if (s < 10) {
 				s = "0" + s;
 			}
+
+			var yearDisplay = document.getElementById("year");
+			yearDisplay.innerText = year;
 
 			var display = document.getElementById("clock");
 

@@ -91,7 +91,7 @@
 
 		<p>The <a href="https://www.vecteezy.com/vector-icons/45814-contact-icon-vector-pack">Contact Icon Vector</a> by <a href="https://www.vecteezy.com/members/mhossey">mhossey</a> is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA</a>.</p>
 
-		<p>Copyright © 2018. Pest Link Sdn Bhd | All Rights Reserved</p></i>
+		<p>Copyright © 2018 - <i id="year"></i>. Pest Link Sdn Bhd | All Rights Reserved</p></i>
 	</div>
 
 	<script>
@@ -137,6 +137,9 @@
 			if (s < 10) {
 				s = "0" + s;
 			}
+
+			var yearDisplay = document.getElementById("year");
+			yearDisplay.innerText = year;
 
 			var display = document.getElementById("clock");
 
