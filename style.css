@@ -30,7 +30,7 @@ is smaller */
 #img {
 	position:absolute; 
 	top: 250px; 
-	right: 125px; 
+	right: 250px; 
 	max-width: 400px; 
 	max-height: 400px; 
 	border-style: solid; 
@@ -84,18 +84,8 @@ form textarea {
 /* company logo position and dimension */
 #logo {
 	float: left;
-	width: 150px;
-	height: 125px;
-	margin-left: 20px;
-	padding: 10px 0px;
-}
-
-@media only screen and (min-width: 300px) and (max-width: 600px) {
-	#logo {
-		float: none;
-		display: block;
-		margin: 0px auto;
-	}
+	height: 100px;
+	margin: 20px 20px;
 }
 
 /* navigation bar */
@@ -108,27 +98,15 @@ form textarea {
 	overflow: hidden; 
 }
 
-.header a {
+.header a, header a:visited {
 	color: #190065;
 }
 
-.header a:visited {
-	color: #190065;
-}
-
-.pages {
+.page {
 	display: inline-block;
-	padding: 40px 100px 10px 10px;
-}
-
-.dropdown {
-	display: inline-block;
+	margin-top: 50px;
+	margin-right: 125px;
 	overflow: hidden;
-}
-
-.dropdown .dropbtn {
-	display: inline;
-	padding: 40px 100px 10px 10px;
 }
 
 .options {
@@ -153,22 +131,8 @@ form textarea {
 	color: #efefef;
 }
 
-.dropdown:hover .options {
+.page:hover .options {
 	display: block;
-}
-
-@media only screen and (min-width: 300px) and (max-width: 600px) {
-	.pages {
-		display: none;
-	}
-	
-	.dropdown {
-		display: none;
-	}
-
-	.dropdown .dropbtn {
-		display: none;
-	}
 }
 
 #popup {
@@ -217,9 +181,9 @@ form textarea {
 	position: relative;
 	width: 65%;
 	height: 500px;
-	border-width: 10px;
-	border-style: solid;
-	border-color: #190065;
+	/* border-width: 10px; */
+	/* border-style: solid; */
+	/* border-color: #190065; */
 	margin: auto;
 	overflow: hidden;
 }
@@ -230,7 +194,6 @@ form textarea {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background-color: #0c0032;
 	overflow: hidden;
 }
 
@@ -238,7 +201,7 @@ form textarea {
 .slides img {
   display: block; 
   width: 100%;
-  min-height: 100%;
+  height: 100%;
   overflow: hidden;
   margin: 0px auto;
 }

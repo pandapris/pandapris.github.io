@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie-edge">
+	<link href="newstyle.css" type="text/css" rel="stylesheet" >
+	<link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+	<title>Pest Link Sdn Bhd</title>
+</head>
+	
+<body onload="renderTime();">	
+
+    <!-- header: include logo and navigation -->
+	<div class="header">
+        <a href="./homepage.html"><img id="logo" src="./images/newlogo.png"/></a>
+    </div>
+
+    <div class="welcome">
+        <div class="welcome-content">
+            <img src="./images/slide4.jpg"/>
+            <div class="content-box">
+                <p class="heading" style="color: #190065;">L E A R N&nbsp;&nbsp;&nbsp;M O R E
+                </br>A B O U T&nbsp;&nbsp;&nbsp;U S</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="space"></div>
+
+    <div class="about">
+        <div class="about-content">
+            <p class="heading">W H A T&nbsp;&nbsp;W E&nbsp;&nbsp;D O</p>
+            <p>General pest control meant for all sort of businesses, warehouses, production plant, restaurants, banks, hotels, household, offices etc. It’s a control against nuisance pest such as cockroaches, ants, termites, mosquitoes, rats and others. For some business it is a standard requirement for operational and licensing where hygiene, cleanliness and food contamination is an issue and is a stringent requirement for all food production and some ISO companies. 
+            </br></br>
+            Pest control operator like us, will have a signed contract (normally a year) servicing the client by applying chemical and non chemical measures. We will have a schedule time agreed by both party for effective treatment exercise.</p>
+        </div>
+    </div>
+
+    <div class="team">
+        <div class="team-content">
+            <p class="heading">T H E&nbsp;&nbsp;T E A M</p>
+            <img src="./images/slide1.jpg"/>
+        </div>
+    </div>
+
+    <div class="branches">
+        <div class="branches-content">
+            <p class="heading">F I N D&nbsp;&nbsp;U S&nbsp;&nbsp;A T</p>
+            <div class="row">
+                <div class="column" style="width: 33.3%">
+                    <p class="heading">M A I N</p>
+
+                    <p>Lot SH-2-5, 2nd floor, Block A, <br>Padimas Point, Jalan Pintas Penampang, <br>88300 Kota Kinabalu, Sabah.</p>
+
+                    <img src="./images/icon2.png" style="width:40px; height:40px; position: absolute"/>
+                    <p class="numbers"><b>Tel:</b> 088 - 714895 / 738878
+                    <br><b>Tel:</b> 012-8282182 (Ms Liew)</p>
+
+                    <img src="./images/icon3.png" style="width:40px; height:40px; position: absolute"/>
+                    <p class="numbers"><b>Fax:</b> 088 - 714914</p>
+
+                    <img src="./images/icon4.png" style="width:40px; height:40px; position: absolute"/>
+                    <p class="email">pestlink@live.com</p>
+                </div>
+                <div class="column" style="width: 33.3%">
+                    <p class="heading">T A W A U</p>
+
+                    <p>TB 12874 Taman Sejati, <br> Jalan Kuhara, <br>91000 Tawau, Sabah.</p>
+
+                    <img src="./images/icon2.png" style="width:40px; height:40px; position: absolute"/>
+                    <p class="numbers"><b>Tel:</b> 017 – 8047277 (Mr Johamka)</p>
+
+                    <img src="./images/icon4.png" style="width:40px; height:40px; position: absolute"/>
+                    <p class="email">pestlink@live.com</p>
+                </div>
+                <div class="column" style="width: 33.3%">
+                    <p class="heading">S A N D A K A N</p>
+
+                    <p>Lot 21, 1st floor, <br>Bandar Sibuga Jaya 2, <br> Batu 8 Jalan Labuk Sandakan, <br>9000 Sandakan, Sabah.</p>
+
+                    <img src="./images/icon2.png" style="width:40px; height:40px; position: absolute"/>
+                    <p class="numbers"><b>Tel:</b> 012 - 802 8899 (Mr Gary)</p>
+
+                    <img src="./images/icon4.png" style="width:40px; height:40px; position: absolute"/>
+                    <p class="email">pestlink@live.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer: include short links, claims and credits -->
+	<div class="footer">
+        <!-- real time clock (based on time set on device) -->
+        <div id="clock"></div>
+
+        <p><a href="./background.html">Company Background</a> | <a href="./form.html">Contact Us</a>
+        <br><br>
+        <i>Copyright © 2018 - <i id="year"></i>. Pest Link Sdn Bhd | All Rights Reserved</i><i style="float: right;">Web by: Priscilla Tham</i></p>
+    </div>
+    
+        <script>
+            function popup() {
+                document.getElementById("backdrop").style.display = "block";
+                document.getElementById("popup").style.display = "block";
+            }
+    
+            function close() {
+                document.getElementById("backdrop").style.display = "none";
+                document.getElementById("popup").style.display = "none";
+            }
+        </script>
+    
+        <script>
+            function renderTime() {
+                var currentDate = new Date();
+                var year = currentDate.getYear();
+                if (year < 1000) {
+                    year += 1900;
+                }
+    
+                var month = currentDate.getMonth();
+                var date = currentDate.getDate();
+                var montharray = new Array("January", "February", "March", "April", "May", "June", 
+                "July", "August", "September", "October", "November", "December");
+    
+                var currentTime = new Date()
+                var h = currentTime.getHours();
+                var m = currentTime.getMinutes();
+                var s = currentTime.getSeconds();
+                var session = "AM"
+                if (h == 24) {
+                    h = 12;
+                    session = "AM";
+                }
+    
+                else if (h == 12) {
+                    session = "PM";
+                }
+    
+                else if (h > 12) {
+                    h -= 12;
+                    session = "PM";
+                }
+    
+                else if (h < 10) {
+                    h = "0" + h;
+                }
+    
+    
+                if (m < 10) {
+                    m = "0" + m;
+                }
+    
+    
+                if (s < 10) {
+                    s = "0" + s;
+                }
+    
+                var yearDisplay = document.getElementById("year");
+                yearDisplay.innerText = year
+    
+                var display = document.getElementById("clock");
+    
+                display.innerText = montharray[month] + " " + date + ", " + year + " | " + h 
+                + ":" + m + ":" + s + " " + session;
+                display.textContent = montharray[month] + " " + date + ", " + year + " | " + 
+                h + ":" + m + ":" + s + " " + session;
+                setTimeout("renderTime()", 1000);
+            }
+    
+            renderTime();
+        </script>
+    </body>
+    </html>
