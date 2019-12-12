@@ -51,9 +51,9 @@
 	</div>
 
 	<!--change headings/titles within the 'h1', 'h2', 'h3' tag-->
-	<h1>Contact Form</h1>
+	<!-- <h1>Contact Form</h1> -->
 
-	<img id="img" src="./images/slide4.jpg" />
+	<!-- <img id="img" src="./images/slide4.jpg" /> -->
 
 	<!--form powered by usebasin.com-->
 	<form accept-charset="UTF-8" action="https://usebasin.com/f/f440957b7bf6" method="POST">
@@ -68,7 +68,7 @@
 
 		<label>
 			<p>Preferred time of contact:
-				<input name="time" required="required"/>
+				<input name="time" required="required" placeholder="2pm"/>
 			</p>
 		</label>
 
@@ -81,17 +81,12 @@
 			<label for="Ms">Ms</label>
 		</p>
 		<label>
-			<p>Name: 
-				<input name="Name" required="required"/>
-			</p>
-		</label>
-		<label>
-			<p>Email: 
-				<input type="email" name="Email" required="required"/>
-			</p>
-		</label>
-		<label>
-			<p>Contact number: 
+			<p>
+				Name: 
+				<input name="Name" required="required" placeholder="Bob"/>&emsp;
+				Email: 
+				<input type="email" name="Email" required="required" placeholder="bob@gmail.com"/>&emsp;
+				Contact number: 
 				<input name="Contact Number" placeholder="+60123456789"/>
 			</p>
 		</label>
@@ -99,8 +94,7 @@
 			<p>Enquiries:</p>
 			<textarea rows="5" columns="50" name="Enquiries" required="required"></textarea>
 		</label>
-		<p><input type="submit" style="background-color: #385464; width: 100px; height: 50px; 
-			border-radius: 5px; color: #efefef;"></p>
+		<p><input class="button" type="submit"></p>
 	</form>
 
 	<!-- footer: include short links, claims and credits -->

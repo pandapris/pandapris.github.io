@@ -1,0 +1,97 @@
+<div class="content-box fade">
+			<!--update the DIRECT LINK within the src quote (source) 
+				to change the image-->
+			<img class="right-img" src="./images/gp1.jpg" />  
+			<h2 class="right-heading">General Pest Control</h2>
+			<div class="content-subbox">
+				<!-- . update text within the p quote
+					. to break paragraphs (enter) use <br> twice
+					. to form a new line use <br> once 
+					. remember to press enter when the line gets too long
+					to ensure readability -->
+				<p>General pest control include spraying, fogging, baiting, and trapping. 
+					Treatment for general pest control covers pest like cockroaches, ants, 
+					flies, mosquitoes, fleas, bedbug, rodents, etc. The chemicals used for a 
+					general pest control spray are totally safe for humans and pets that shall 
+					be those approved by Public Health insecticides as approved by the 
+					Pesticides Board of Malaysia.
+				<br><br>
+				During spraying and fogging, it is recommended that any pet food and water 
+				bowls are removed prior to treatment and cleaned after treatment. Food and 
+				water must also be covered. Fish and reptile pets must also be remove before 
+				spraying and fogging because the chemical may harm them.</p>
+			</div>
+		</div>
+
+		<div class="content-box fade">
+		  	<img class="right-img" src="./images/PT2.png" />
+			<h2 class="right-heading">Proven Termites Baiting System</h2>
+			<div class="content-subbox">
+				<p>Termite baiting is to place a food source that contains toxicant. Foraging 
+					termites that find the baits will consume and share the food containing 
+					the toxicant with its nest mates including the Queen and the King through 
+					a process called trophallaxis. Elimination process may require 
+					approximately 2 to 12 weeks depending on the size of the colony, typically 
+					6 to 8 weeks. There will be two types of baiting system that we use which 
+					are In-Ground Baiting System which for preventing future invading colony 
+					from infesting the premises and Above Ground Baiting System which is to 
+					eliminate current termite infestation in the premises.</p>
+			</div>
+		</div>
+
+		<div class="content-box fade">
+		  	<img class="right-img" src="./images/ppc1.jpg" />
+			<h2 class="right-heading">Pre- & Post-Construction Anti 
+			Termite</h2>
+			<div class="content-subbox">
+				<p>Pre-Construction Anti termite treatment is normally carried out before 
+					construction <!--of homes, schools, buildings etc--> and Post-Construction 
+					Anti Termite Treatment is after construction.
+					<br><br>
+					It is a process where we treat the soil for termite control. Subterranean 
+					Termite can cause great losses to the interest of man especially in houses 
+					and buildings in urban areas. They also affect crops, habitation or 
+					utilities such as wooden poles. There have even been reports of termites 
+					damaging plastic or lead sheathings of underground cables.
+					<br><br>
+					We spray or inject termiticide to different stages of construction for pre 
+					constructed buildings and drill holes surrounding the buildings for 
+					post constructed. After treatment is carried out a service warranty of 5, 
+					3, or 2 years was awarded to the client. Nowadays all government newly 
+					constructed projects have a stringent requirement to apply 
+					pre-construction anti termite treatment for its buildings.</p>
+			</div>
+		</div>
+
+		<div class="content-box fade">
+		  	<img class="right-img" src="./images/fum1.jpg" />
+			<h2 class="right-heading">Fumigation Services</h2>
+			<div class="content-subbox">
+				<p>Fumigation is the most effective way to force pests out from their 
+					harbourage and the use of poisonous gases can kill pests in an enclosed 
+					area. Fumigation gas generally does not leave unsightly, odorous, or 
+					hazardous residues. Fumigation will be handled by our licensed fumigator 
+					that is fully trained due to the extremely hazardous gases. The application 
+					of fumigants is limited to areas, spaces, items, or commodities that 
+					should be tightly enclosed.</p>
+			</div>
+		</div>
+
+		<div class="content-box fade">
+		  	<img class="right-img" src="./images/offshore1.jpg" />
+			<h2 class="right-heading">Offshore Pest Control Services</h2>
+			<div class="content-subbox">
+				<p>Pest infestation can cause severe effect to the offshore industry which 
+					can affect human and the environment. The main problems with pests 
+					infestation on offshore gas, oil rigs, and offshore support vessels are 
+					can cause food contamination that causes food poisoning and also health 
+					problems and diseases to the. Besides that pest can cause damage to the 
+					structure. General pest control will be handled on offshore to control pest 
+					infestation which firstly our pest control specialist will identify the pest 
+					species, its habitat, and degree of infestation. Then Spraying, gelling, and 
+					baiting will be done depends on the pest identified. Next, placement of 
+					monitoring systems to further monitor the level of pest infestation, and 
+					recommend structural, sanitary and/or procedural modifications to 
+					reduce pests’ access to food, water and shelter.</p>
+			</div>
+		</div>

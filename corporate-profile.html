@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie-edge">
 	<link href="./style.css" type="text/css" rel="stylesheet" >
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="icon" href="./images/favicon.ico" type="image/x-icon">
 	<title>Corporate Profile</title>
 </head>
@@ -51,55 +52,92 @@
 	</div>
 
 	<!--change headings/titles within the 'h1', 'h2', 'h3' tag-->
-	<h1>Corporate Profile</h1>
+	<!-- <h1>Corporate Profile</h1> -->
 
-	<div class="content-container">
-		<h2 class="post-title">Managing Director</h2>
+	<div class="content-container" data-aos="zoom-in">
+		<!-- <h2 class="post-title">Managing Director</h2> -->
 		<!--update the DIRECT LINK within the src quote (source) 
 			to change the image-->
-		<img class="profile-img" src="./images/lumin.jpg" />
-		<div  class="content-box" style="height: 80%; bottom: 0px;">
+		<!-- <img class="profile-img" src="./images/lumin.jpg" /> -->
+		<div  class="content-box">
+			<div class="heading-box">
+				<p class="heading">M A N A G I N G<br>D I R E C T O R</p>
+			</div>
+
+			<!--update the DIRECT LINK within the src quote (source) 
+				to change the image-->
+			<div class="title-img">
+				<img src="./images/lumin.jpg" />
+			</div>
+
 			<!-- . update text within the p quote
 				. to break paragraphs (enter) use <br> twice
 				. to form a new line use <br> once 
 				. remember to press enter when the line gets too long
 				to ensure readability -->
-			<p style="padding: 0px 10px 0px 160px;">Name: Liew Lu Min<br>
-				She has been in the Pest Control management for 15 years and she is an 
-				AFAS specialist.</p>
+			<div class="text-box flex">
+				<p>
+					Name: Liew Lu Min<br>
+					She has been in the Pest Control management for 15 years and she is an AFAS specialist.
+				</p>
+			</div>
 		</div>
 	</div>
 	
-	<div class="content-container">
-		<h2 class="post-title">Company Consultant</h2>
-		<img class="profile-img" src="./images/tham.jpg" />
-		<div class="content-box" style="height: 80%; bottom: 0px;">
-			<p style="padding: 0px 10px 0px 160px;">Name: Tham Kon Shin<br>
-				Mr. Tham is a Licensed Fumigator, Licensed Pesticide Applicator and NIOSH trained. 
-				He has 20 years experience in Pest Control Industry and was one of the 
-				top management in his previous capacity.</p>
+	<div class="content-container" data-aos="zoom-in">
+		<div class="content-box">
+			<div class="heading-box">
+				<p class="heading">C O M P A N Y<br>C O N S U L T A N T</p>
+			</div>
+			<div class="title-img">
+				<img src="./images/tham.jpg" />
+			</div> 
+			<div class="text-box flex">
+				<p>
+					Name: Tham Kon Shin<br>
+					Mr. Tham is a Licensed Fumigator, Licensed Pesticide Applicator and NIOSH trained. 
+					He has 20 years experience in Pest Control Industry and was one of the 
+					top management in his previous capacity.
+				</p>
+			</div>
 		</div>
 	</div>
 
-	<div class="content-container">
-		<h2 class="post-title">Sales Manager</h2>
-		<img class="profile-img" src="./images/justin.jpg" />
-		<div class="content-box" style="height: 80%; bottom: 0px;">
-			<p style="padding: 0px 10px 0px 160px;">Name: Justin Tambud<br>
-				Mr. Justin is a Licensed Assistant Pesticide Applicator and been in the 
-				Sales Management of pest control for 21 years.</p>
+	<div class="content-container" data-aos="zoom-in">
+		<div class="content-box">
+			<div class="heading-box">
+				<p class="heading">S A L E S<br>M A N A G E R</p>
+			</div>
+			<div class="title-img">
+				<img src="./images/justin.jpg" />
+			</div>
+			<div class="text-box flex">
+				<p>
+					Name: Justin Tambud<br>
+					Mr. Justin is a Licensed Assistant Pesticide Applicator and been in the 
+					Sales Management of pest control for 21 years.
+				</p>
+			</div>
 		</div>
 	</div>
 	
-	<div class="content-container">
-		<h2 class="post-title">Offshore Specialist</h2>
-		<img class="profile-img" src="./images/rashid.jpg" />
-		<div  class="content-box" style="height: 80%; bottom: 0px;">
-			<p style="padding: 0px 10px 0px 160px;">Name: Abdul Rashid Bin Husin<br>
-				Mr. Rashid is a licensed Assistant Pesticide Applicator and also an 
-				Off Shore Licensed Holder.  He started involvement in the business 11 years 
-				ago and is in charge of business development and new business venture. He is 
-				also AFAS Specialist.</p>
+	<div class="content-container" data-aos="zoom-in">
+		<div class="content-box">
+			<div class="heading-box">
+				<p class="heading">O F F S H O R E<br>S P E C I A L I S T</p>
+			</div>
+			<div class="title-img">
+				<img src="./images/rashid.jpg" />
+			</div>
+			<div  class="text-box flex">
+				<p>
+					Name: Abdul Rashid Bin Husin<br>
+					Mr. Rashid is a licensed Assistant Pesticide Applicator and also an 
+					Off Shore Licensed Holder.  He started involvement in the business 11 years 
+					ago and is in charge of business development and new business venture. He is 
+					also AFAS Specialist.
+				</p>
+			</div>
 		</div>
 	</div>
 
@@ -193,6 +231,11 @@
 		}
 
 		renderTime();
+	</script>
+
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+		AOS.init();
 	</script>
 </body>
 </html>
