@@ -571,6 +571,10 @@ form .button {
 		justify-content: left;
 		align-items: flex-start;
 	}
+
+	.hide {
+		display: none;
+	}
 }
 
 @media only screen and (min-width: 700px) and (max-width: 1050px) {
