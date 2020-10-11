@@ -13,11 +13,11 @@
 <body onload="renderTime();">
 	<!-- header: include logo and navigation -->
 	<div class="header">
-		<a href="./index.html"><img id="logo" src="./images/logo.png"/></a>
+		<a href="./index.html"><img id="logo" src="./images/newlogo.png"/></a>
 		
-		<a class="pages" href="./index.html">Home</a>
-		<div class="dropdown">
-			<a class="dropbtn" href="javascript:void(0)">About</a>
+		<div class="page"><a href="./index.html">Home</a></div>
+		<div class="page">
+			<a href="javascript:void(0)">About</a>
 			<div class="options">
 				<a href="./company-background.html">Company Background</a>
 				<a href="./corporate-profile.html">Corporate Profile</a>
@@ -25,9 +25,10 @@
 				<!--<a href="./customer-testimonial.html">Customer Testimonial</a>-->
 			</div>
 		</div>
-		<a class="pages" href="./services.html">Services</a>
-		<div class="dropdown">
-			<a class="dropbtn" href="./pest.html">Pest</a>
+
+		<div class="page"><a href="./services.html">Services</a></div>
+		<div class="page">
+			<a href="./pest.html">Pest</a>
 			<div class="options">
 				<a href="./ants.html">Ants</a>
 				<a href="./bed-bugs.html">Bed Bugs</a>
@@ -39,8 +40,9 @@
 				<a href="./termites.html">Termites</a>
 			</div>
 		</div>
-		<div class="dropdown">
-			<a class="dropbtn" href="javascript:void(0)">Contact</a>
+
+		<div class="page">
+			<a href="javascript:void(0)">Contact</a>
 			<div class="options">
 				<a href="./contact-form.html">Enquiry</a>
 				<a href="./location.html">Location</a>
@@ -50,95 +52,107 @@
 	</div>
 
 	<!--change headings/titles within the 'h1', 'h2', 'h3' tag-->
-	<h1>Ants</h1>
+	<!-- <h1>Ants</h1> -->
 	
 	<!-- information box -->
-	<div data-aos="fade-right">
-		<div class="content-container">
-			<div class="content-box">
-				<h2 class="left-heading">Introduction</h2>
-				<!--update the DIRECT LINK within the src quote (source) 
-				to change the image-->
-				<img class="left-img" src="./images/ants0.png" />
-				<div class="content-subbox" style="right: 0px;">
-					<!-- . update text within the p quote
-						 . to break paragraphs (enter) use <br> twice
-						 . to form a new line use <br> once 
-						 . remember to press enter when the line gets too long
-						to ensure readability -->
-					<p>Ants are a social insects that live together. Ants are insects 
-						classified in Order Hymenoptera and are brought to the family of 
-						Formicidae. There are about 10,000 species of ants but only 40 
-						species are considered as pests. Some of the species that considered 
-						as pest are Black house ant (Ochetellus), Fire ant (Solenopsis spp), 
-						Ghost ant (Tapinoma melanocephalum), Crazy ants (Paratrechina 
-						longicornis), Pharoah’s ant (Monomorium pharaonsis) etc. In 
-						Malaysia, ants are among the most common pests in the home 
-						environment.</p>
-				</div>
+	<div class="content-container" data-aos="fade-right">
+		<div class="content-box">
+			<div class="heading-box">
+					<p class="heading">I N T R O D U C T I O N</p>
+			</div>
+			<!--update the DIRECT LINK within the src quote (source) 
+			to change the image-->
+			<div class="title-img">
+				<img src="./images/ants3.png" />
+			</div> 
+
+			<div class="text-box flex">
+				<!-- . update text within the p quote
+						. to break paragraphs (enter) use <br> twice
+						. to form a new line use <br> once 
+						. remember to press enter when the line gets too long
+					to ensure readability -->
+				<p>
+					Ants are a social insects that live together. Ants are insects 
+					classified in Order Hymenoptera and are brought to the family of 
+					Formicidae. There are about 10,000 species of ants but only 40 
+					species are considered as pests. Some of the species that considered 
+					as pest are Black house ant (Ochetellus), Fire ant (Solenopsis spp), 
+					Ghost ant (Tapinoma melanocephalum), Crazy ants (Paratrechina 
+					longicornis), Pharoah’s ant (Monomorium pharaonsis) etc. In 
+					Malaysia, ants are among the most common pests in the home 
+					environment.
+				</p>
 			</div>
 		</div>
 	</div>
 
-	<div data-aos="fade-right">
-		<div class="content-container">
-			<div class="content-box">
-				<h2 class="right-heading">Reasons ants considered as pests</h2>
-				<img class="right-img" src="./images/ants1.jpg" />
-				<div class="content-subbox" style="left: 0px">
-					<!-- . use ol quote to form a numbered list
-						 . use ul quote to form a bullet list-->
-					<ol>
-						<li>Irritating to most people when found in food or drink.</li>
-						<li>When ants are moving in groups, it can cause disruption.</li>
-						<li>Mechanical vector to human disease.</li>
-						<li>Can transmit pathogenic organisms to humans.</li>
-						<li>Can cause contamination on surgical instruments and eat the 
-							injured patients wounds in hospital.</li>
-					</ol>
-				</div>
+
+	<div class="content-container" data-aos="fade-right">
+		<div class="content-box">
+			<div class="heading-box">
+				<p class="heading">W H Y&nbsp;&nbsp;A N T S<br>A R E<br>P E S T</p>
+			</div>
+			<div class="title-img">
+				<img src="./images/ants1.jpg" />
+			</div>
+			<div class="text-box flex">
+				<!-- . use ol quote to form a numbered list
+						. use ul quote to form a bullet list-->
+				<ol>
+					<li>Irritating to most people when found in food or drink.</li>
+					<li>When ants are moving in groups, it can cause disruption.</li>
+					<li>Mechanical vector to human disease.</li>
+					<li>Can transmit pathogenic organisms to humans.</li>
+					<li>Can cause contamination on surgical instruments and eat the 
+						injured patients wounds in hospital.</li>
+				</ol>
 			</div>
 		</div>
 	</div>
 
-	<div data-aos="fade-right">
-		<div class="content-container">
-			<div class="content-box">
-				<h2 class="left-heading">Areas ants are found</h2>
-				<img class="left-img" src="./images/ants2.png" />
-				<div class="content-subbox" style="right: 0px;">
-					<ol>
-						<li style="padding:0px;">Residential structures and buildings.</li>
-						<li style="padding:0px;">Back wall, in furniture and outside area 
-							(garden).</li>
-						<li style="padding:0px;">Under the rocks, the boards surfaces, and 
-							under the cracks of the building.</li>
-						<li style="padding:0px;">Around the sink and a damp kitchen.</li>
-					</ol>
-				</div>
+	<div class="content-container" data-aos="fade-right">
+		<div class="content-box">
+			<div class="heading-box">
+				<p class="heading">F I N D&nbsp;&nbsp;A N T S<br>A T</p>
+			</div>
+			<div class="title-img">
+				<img src="./images/ants2.png" />
+			</div>
+			<div class="text-box flex">
+				<ol>
+					<li>Residential structures and buildings.</li>
+					<li>Back wall, in furniture and outside area 
+						(garden).</li>
+					<li>Under the rocks, the boards surfaces, and 
+						under the cracks of the building.</li>
+					<li>Around the sink and a damp kitchen.</li>
+				</ol>
 			</div>
 		</div>
 	</div>
 
-	<div data-aos="fade-right">
-		<div class="content-container" style="display: flex; justify-content: center;">
-			<div class="content-box">
-				<h2 class="right-heading">Treatments</h2>
-				<img class="right-img" src="./images/ants3.png" />
-				<div class="content-subbox" style="left: 0px">
-					<ol>
-						<li>Direct treatment / Insecticide residuals.</li>
-						<li>Gelling.</li>
-						<li>Sanitation and eliminating standing water</li>
-						<li>Keep tree branches and other plants cut back from the house. 
-							Sometimes 	pests use these branches to get into your home</li>
-						<li>Make sure that there are no cracks or little openings around 
-							the bottom of your house. Sometimes pests use these to get into 
-							your home.</li>
-						<li>Make sure that firewood and building materials are not stored 
-							next to your home- Pests like to build nests in stacks of wood.</li>
-					</ol>
-				</div>
+	<div class="content-container" data-aos="fade-right">
+		<div class="content-box">
+			<div class="heading-box">
+				<p class="heading">T R E A T M E N T S</p>
+			</div>
+			<div class="title-img">
+				<img src="./images/ants0.png" />
+			</div>
+			<div class="text-box flex">
+				<ol>
+					<li>Direct treatment / Insecticide residuals.</li>
+					<li>Gelling.</li>
+					<li>Sanitation and eliminating standing water</li>
+					<li>Keep tree branches and other plants cut back from the house. 
+						Sometimes 	pests use these branches to get into your home</li>
+					<li>Make sure that there are no cracks or little openings around 
+						the bottom of your house. Sometimes pests use these to get into 
+						your home.</li>
+					<li>Make sure that firewood and building materials are not stored 
+						next to your home- Pests like to build nests in stacks of wood.</li>
+				</ol>
 			</div>
 		</div>
 	</div>
@@ -147,14 +161,39 @@
 	<div class="footer">
 		<!-- real time clock (based on time set on device) -->
 		<div id="clock"></div>
-		
+
 		<p><a href="./company-background.html">Company Background</a> | <a href="./services.html">
 			Our Expertise</a> | <a href="./pest.html">General Pest</a> | 
-			<a href="./contact-form.html">Contact Us</a>
-		<br><br>
-		<i>This website can be viewed in Microsoft Edge, IE, Safari, Firefox and Google 
+			<a href="./contact-form.html">Contact Us</a></p>
+		<div class="row">
+			<div class="column" style="width: 33.3%">
+				<p>M A I N
+				<br><br>Lot SH-2-5, 2nd floor, Block A, <br>Padimas Point, Jalan Pintas Penampang, <br>88300 Kota Kinabalu, Sabah.
+				<br><b>Tel:</b> 088 - 714895 / 738878
+				<br><b>Tel:</b> 012-8282182 (Ms Liew)
+				<br><b>Fax:</b> 088 - 714914
+				<br>pestlink@live.com</p>
+			</div>
+			<div class="column" style="width: 33.3%">
+				<p>T A W A U
+				<br><br>TB 12874 Taman Sejati, <br> Jalan Kuhara, <br>91000 Tawau, Sabah.
+				<br><b>Tel:</b> 017 – 8047277 (Mr Johamka)
+				<br>pestlink@live.com</p>
+			</div>
+			<div class="column" style="width: 33.3%">
+				<p>S A N D A K A N
+				<br><br>Lot 21, 1st floor, <br>Bandar Sibuga Jaya 2, <br> Batu 8 Jalan Labuk Sandakan, <br>9000 Sandakan, Sabah.
+				<br><b>Tel:</b> 012 - 802 8899 (Mr Gary)
+				<br>pestlink@live.com</p>
+			</div>
+		</div>
+		<p>
+			<i>This website can be viewed in Microsoft Edge, IE, Safari, Firefox and Google 
 			Chrome. It may, however, require Flash Plugin and javascript enabled.
-		<br>Copyright © 2018 - <i id="year"></i>. Pest Link Sdn Bhd | All Rights Reserved</p></i>
+			<br>Copyright © 2018 - <i id="year"></i>. Pest Link Sdn Bhd | All Rights Reserved</i>
+			<i style="float: right;">Web by: Priscilla Tham<br>
+			priscillatham@hotmail.com</i>
+		</p>
 	</div>
 
 	<script>

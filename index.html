@@ -12,11 +12,11 @@
 <body onload="renderTime();">	
 	<!-- header: include logo and navigation -->
 	<div class="header">
-		<a href="./index.html"><img id="logo" src="./images/logo.png"/></a>
+		<a href="./index.html"><img id="logo" src="./images/newlogo.png"/></a>
 		
-		<a class="pages" href="./index.html">Home</a>
-		<div class="dropdown">
-			<a class="dropbtn" href="javascript:void(0)">About</a>
+		<div class="page"><a href="./index.html">Home</a></div>
+		<div class="page">
+			<a href="javascript:void(0)">About</a>
 			<div class="options">
 				<a href="./company-background.html">Company Background</a>
 				<a href="./corporate-profile.html">Corporate Profile</a>
@@ -24,9 +24,10 @@
 				<!--<a href="./customer-testimonial.html">Customer Testimonial</a>-->
 			</div>
 		</div>
-		<a class="pages" href="./services.html">Services</a>
-		<div class="dropdown">
-			<a class="dropbtn" href="./pest.html">Pest</a>
+
+		<div class="page"><a href="./services.html">Services</a></div>
+		<div class="page">
+			<a href="./pest.html">Pest</a>
 			<div class="options">
 				<a href="./ants.html">Ants</a>
 				<a href="./bed-bugs.html">Bed Bugs</a>
@@ -38,8 +39,9 @@
 				<a href="./termites.html">Termites</a>
 			</div>
 		</div>
-		<div class="dropdown">
-			<a class="dropbtn" href="javascript:void(0)">Contact</a>
+
+		<div class="page">
+			<a href="javascript:void(0)">Contact</a>
 			<div class="options">
 				<a href="./contact-form.html">Enquiry</a>
 				<a href="./location.html">Location</a>
@@ -55,46 +57,65 @@
 			 . the number of div slides classes is directly 
 			proportional to the number of images included -->
 		<div class="slides fade">
-		  <img src="./images/slide1.gif">
+			<img src="./images/ns0.gif">
+			<div class="right-cover"></div>
+			<div class="left-cover"></div>
 		</div>
 
 		<div class="slides fade">
-		  <img src="./images/slide2.gif">
+			<img src="./images/ns2.gif">
+			<div class="right-cover"></div>
+			<div class="left-cover"></div>
 		</div>
 
 		<div class="slides fade">
-		  <img style="height:500px" src="./images/slide3.gif">
+			<img src="./images/ns3.gif">
+			<div class="right-cover"></div>
+			<div class="left-cover"></div>
 		</div>
 
 		<div class="slides fade">
-		  <img src="./images/slide4.jpg">
+			<img src="./images/ns1.gif">
+			<div class="right-cover"></div>
+			<div class="left-cover"></div>
 		</div>
-		<!-- previous and next buttons -->
-		<a id="prev" onclick="plusSlides(-1)">&#10094;</a>
-		<a id="next" onclick="plusSlides(1)">&#10095;</a>
-	</div>
 
-	<!-- side text box within picture slideshow container -->
-	<div>
-		<div class="subbox">
-			<h1>Why Pest Link</h1>
-			<ul>
-				<li>We are committed in helping our clients to control their pest problem 
-					and provide solution, even for issues they aren’t yet aware of.</li>
-				<li>We know that things change, and we are constantly striving to adapt and improve 
-					by approaching the latest technology and system in solving the pest problems.</li>
-				<li>Our combined of more than 30 years experience in pest control business 
-					means we are highly expert in what we do. </li>
-				<li>Services are done by a licensed, certified and insured Pest Control 
-					Operator (PCO).</li>
-				<li>We implemented safety policy, health issues, and go green in our 
-					pest control procedure.</li>
-			</ul>
-			<!-- . update the link in the href quote to change 
-				the button page destination onclick 
-				 . './' stands for current directory/page 
-				 . the number of div subbox classes is directly 
-				proportional to the number of images included -->
+		<div class="slides fade">
+			<img src="./images/ns4.gif">
+			<div class="right-cover"></div>
+			<div class="left-cover"></div>
+		</div>
+
+		<!-- side text box within picture slideshow container -->
+		<div class="text-box">
+			<div>
+				<p class="heading">C O V I D - 1 9&nbsp;&nbsp;D I S I N F E C T I O N</p>
+				<p style="text-align: center;">		
+					P E S T&nbsp;&nbsp;L I N K&nbsp;&nbsp;fights against the Coronavirus!
+					<br>
+					Take precautions and all will be well.
+				</p>
+			</div>
+			<a href="./covid19.html">
+				<button class="blink" name="Learn More">
+					<label for="Learn More">&#x2192;</label>
+				</button>
+			</a>
+		</div>
+
+		<div class="text-box">
+			<div>
+				<p class="heading">H O U R S</p>
+				<p style="text-align: center;">
+					pestlink@live.com
+					<br><br>		
+					Monday-Friday | 8.30am - 5pm
+					<br>
+					Saturday | 8.30am - 12.30pm
+					<br><br>
+					Learn more ahead.
+				</p>
+			</div>
 			<a href="./company-background.html">
 				<button class="blink" name="Learn More">
 					<label for="Learn More">&#x2192;</label>
@@ -102,34 +123,48 @@
 			</a>
 		</div>
 
-		<div class="subbox">
-			<h1>Our Expertise</h1>
-			<ul>
-				<li>General Pest Control</li>
-				<li>Proven Termites Baiting System</li>
-				<li>Pre-Construction Anti Termites & Post-Construction Anti Termites</li>
-				<li>Fumigation Services</li>
-				<li>Offshore Pest Control Services</li>
-			</ul>	
+		<div class="text-box">
+			<div>
+				<p class="heading">A S K&nbsp;&nbsp;F O R&nbsp;&nbsp;Q U O T A T I O N</p>
+				<p>
+					Do you have a pest problem? Fill up the form ahead to reach out. We will tend to you very soon.
+				</p>
+				<!-- . update the link in the href quote to change 
+				the button page destination onclick 
+				. './' stands for current directory/page 
+				. the number of div text-box classes is directly 
+				proportional to the number of images included  -->
+			</div>
+			<a href="./contact-form.html">
+				<button class="blink" name="Learn More">
+					<label for="Learn More">&#x2192;</label>
+				</button>
+			</a>
+		</div>
+	
+		<div class="text-box">
+			<div>
+				<p class="heading">O U R&nbsp;&nbsp;E X P E R T I S E</p>
+				<p>
+					Pest problem? We promise proven and effective control as trusted by our long term customers.
+					<br><br>
+					We also keep your environment safe from pest from a new perspective; prevention is key. Check out our cleaning service.
+				</p>
+			</div>
 			<a href="./services.html">
 				<button class="blink" name="Learn More">
 					<label for="Learn More">&#x2192;</label>
 				</button>
 			</a>
 		</div>
-
-		<div class="subbox">
-			<h1>Identify Your Pest</h1>
-			<ul>
-				<li>Ants</li>
-				<li>Bed Bugs</li>
-				<li>Cockroaches</li>
-				<li>Flies</li>
-				<li>Mosquitoes</li>
-				<li>Rodents</li>
-				<li>Storage Pest</li>
-				<li>Termites</li>
-			</ul>
+	
+		<div class="text-box">
+			<div>
+				<p class="heading">K N O W&nbsp;&nbsp;Y O U R&nbsp;&nbsp;P E S T</p>
+				<p>
+					 We have kept it transparent to our customers with this information which include treatments and, detection and surveillance on each pest.
+				</p>
+			</div>
 			<a href="./pest.html">
 				<button class="blink" name="Learn More">
 					<label for="Learn More">&#x2192;</label>
@@ -137,22 +172,9 @@
 			</a>
 		</div>
 
-		<div class="subbox">
-			<h1>Contact Us</h1>
-			<p>Do you have any pest problem(s)?
-			<br><br>
-			Any inquiries or feedback?
-			<br><br>
-			Or just simply seeking information about our company?
-			<br><br>
-			Reach out to us and we will tend to you soon, if not immediately!</p>
-			
-			<a href="./contact-form.html">
-				<button class="blink" name="Learn More">
-					<label for="Learn More">&#x2192;</label>
-				</button>
-			</a>
-		</div>
+		<!-- previous and next buttons -->
+		<a id="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a id="next" onclick="plusSlides(1)">&#10095;</a>
 	</div>
 	<br>
 	<!-- . bullet buttons for slides indication and change 
@@ -180,7 +202,7 @@
 		function showSlides(n) {
 		  var i;
 		  var x = document.getElementsByClassName("slides");
-		  var y = document.getElementsByClassName("subbox");
+		  var y = document.getElementsByClassName("text-box");
 		  var dots = document.getElementsByClassName("dot");
 		  if (n > x.length) {slideIndex = 1}    
 		  if (n < 1) {slideIndex = x.length}
@@ -210,11 +232,36 @@
 
 		<p><a href="./company-background.html">Company Background</a> | <a href="./services.html">
 			Our Expertise</a> | <a href="./pest.html">General Pest</a> | 
-			<a href="./contact-form.html">Contact Us</a>
-		<br><br>
-		<i>This website can be viewed in Microsoft Edge, IE, Safari, Firefox and Google 
+			<a href="./contact-form.html">Contact Us</a></p>
+		<div class="row">
+			<div class="column" style="width: 33.3%">
+				<p>M A I N
+				<br><br>Lot SH-2-5, 2nd floor, Block A, <br>Padimas Point, Jalan Pintas Penampang, <br>88300 Kota Kinabalu, Sabah.
+				<br><b>Tel:</b> 088 - 714895 / 738878
+				<br><b>Tel:</b> 012-8282182 (Ms Liew)
+				<br><b>Fax:</b> 088 - 714914
+				<br>pestlink@live.com</p>
+			</div>
+			<div class="column" style="width: 33.3%">
+				<p>T A W A U
+				<br><br>TB 12874 Taman Sejati, <br> Jalan Kuhara, <br>91000 Tawau, Sabah.
+				<br><b>Tel:</b> 017 – 8047277 (Mr Johamka)
+				<br>pestlink@live.com</p>
+			</div>
+			<div class="column" style="width: 33.3%">
+				<p>S A N D A K A N
+				<br><br>Lot 21, 1st floor, <br>Bandar Sibuga Jaya 2, <br> Batu 8 Jalan Labuk Sandakan, <br>9000 Sandakan, Sabah.
+				<br><b>Tel:</b> 012 - 802 8899 (Mr Gary)
+				<br>pestlink@live.com</p>
+			</div>
+		</div>
+		<p>
+			<i>This website can be viewed in Microsoft Edge, IE, Safari, Firefox and Google 
 			Chrome. It may, however, require Flash Plugin and javascript enabled.
-		<br>Copyright © 2018 - <i id="year"></i>. Pest Link Sdn Bhd | All Rights Reserved</p></i>
+			<br>Copyright © 2018 - <i id="year"></i>. Pest Link Sdn Bhd | All Rights Reserved</i>
+			<i style="float: right;">Web by: Priscilla Tham<br>
+			priscillatham@hotmail.com</i>
+		</p>
 	</div>
 
 	<script>

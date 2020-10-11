@@ -13,11 +13,11 @@
 <body onload="renderTime();">
 	<!-- header: include logo and navigation -->
 	<div class="header">
-		<a href="./index.html"><img id="logo" src="./images/logo.png"/></a>
+		<a href="./index.html"><img id="logo" src="./images/newlogo.png"/></a>
 		
-		<a class="pages" href="./index.html">Home</a>
-		<div class="dropdown">
-			<a class="dropbtn" href="javascript:void(0)">About</a>
+		<div class="page"><a href="./index.html">Home</a></div>
+		<div class="page">
+			<a href="javascript:void(0)">About</a>
 			<div class="options">
 				<a href="./company-background.html">Company Background</a>
 				<a href="./corporate-profile.html">Corporate Profile</a>
@@ -25,9 +25,10 @@
 				<!--<a href="./customer-testimonial.html">Customer Testimonial</a>-->
 			</div>
 		</div>
-		<a class="pages" href="./services.html">Services</a>
-		<div class="dropdown">
-			<a class="dropbtn" href="./pest.html">Pest</a>
+
+		<div class="page"><a href="./services.html">Services</a></div>
+		<div class="page">
+			<a href="./pest.html">Pest</a>
 			<div class="options">
 				<a href="./ants.html">Ants</a>
 				<a href="./bed-bugs.html">Bed Bugs</a>
@@ -39,8 +40,9 @@
 				<a href="./termites.html">Termites</a>
 			</div>
 		</div>
-		<div class="dropdown">
-			<a class="dropbtn" href="javascript:void(0)">Contact</a>
+
+		<div class="page">
+			<a href="javascript:void(0)">Contact</a>
 			<div class="options">
 				<a href="./contact-form.html">Enquiry</a>
 				<a href="./location.html">Location</a>
@@ -49,70 +51,72 @@
 		</div>
 	</div>
 
-	<!--change headings/titles within the 'h1', 'h2', 'h3' tag-->
-	<h1>About Us</h1>
-
 	<!-- information box -->
-	<div data-aos="zoom-in">
-		<div class="content-container">
-			<div class="content-box">
-				<h2 class="left-heading">What We Are</h2>
-				<!--update the DIRECT LINK within the src quote (source) 
-				to change the image-->
-				<img class="left-img" src="./images/CBG2.png" />
-				<div class="content-subbox" style="right: 0px;">
-					<!-- . update text within the p quote
-						 . to break paragraphs (enter) use <br> twice
-						 . to form a new line use <br> once 
-						 . remember to press enter when the line gets too long
-						to ensure readability -->
-					<p>Pest Link Sdn. Bhd. is an establish professional Bumiputera Company 
-						dealing in Pest Control service and have a highly trained 
-						professional team with years of experience.
-					<br><br>
-					The company was built based on ideas of personalize and effective 
-					services to our value client. Pest Link Sdn. Bhd. will enhance the 
-					most important criteria’s of service industry by placing the customer 
-					satisfaction above all through our Customer Care department and Service 
-					department. The company starts its operation with a total combine of more 
-					than 30 years industry knowledge. We believe in long term relationship 
-					and thus creating loyal clientele. </p>
-				</div>
+	<div class="content-container" data-aos="zoom-in">
+		<div class="content-box">
+			<div class="heading-box">
+				<p class="heading">W H O<br>A R E<br>W E</p>
+			</div>
+			<!--update the DIRECT LINK within the src quote (source) 
+			to change the image-->
+			<div class="title-img">
+				<img src="./images/cb1.jpg" />
+			</div>
+
+			<div class="side-img3 hide">
+				<img src="./images/cb3.jpg" />
+			</div>
+
+			<div class="text-box">
+				<!-- . update text within the p quote
+						. to break paragraphs (enter) use <br> twice
+						. to form a new line use <br> once 
+						. remember to press enter when the line gets too long
+					to ensure readability -->
+				<p>Pest Link Sdn. Bhd. is an establish professional Bumiputera Company 
+					dealing in Pest Control service and have a highly trained 
+					professional team with years of experience.
+				<br><br>
+				The company was built based on ideas of personalize and effective 
+				services to our value client. Pest Link Sdn. Bhd. will enhance the 
+				most important criteria’s of service industry by placing the customer 
+				satisfaction above all through our Customer Care department and Service 
+				department. The company starts its operation with a total combine of more 
+				than 30 years industry knowledge. We believe in long term relationship 
+				and thus creating loyal clientele. </p>
 			</div>
 		</div>
 	</div>
 
-	<div data-aos="zoom-in">
-		<div class="content-container">
-			<div class="content-box">
-				<h2 class="right-heading">What We Do</h2>
-				<div data-aos="flip-left" data-aos-delay="1000" data-aos-duration="1500">
-					<div class="link-box">
-						<!-- . update the link in the href quote to change 
-								the page destination onclick 
-							 . './' stands for current directory/page -->
-						<a style="color: #efefef; font-family: Calibri; text-align: center;" href="./services.html">
-							<b style="font-size: 1.5em;">SERVICES |</b> <i>We may have the resources to help you.</i>
-						</a>
-					</div>
-				</div>
-				<div class="content-subbox">
-					<!--<p>Pest Link Sdn. Bhd. specializes in General Pest Control, Pre-Construction 
-						Anti Termite Treatment, Post-Construction Anti Termite Treatment, Fumigation 
-						MAFAS Services (ISPM 15 the international requirement for export commodities 
-						with Wood Packing Materials) and HACCP (Hazard Critical Control Point – 
-						a regulated requirement for food production and some ISO companies) services.</p>-->
+	
+	<div class="content-container" data-aos="zoom-in">
+		<div class="content-box">
+			<div class="heading-box">
+				<p class="heading">W H A T<br>W E<br>D O</p>
+			</div>
 
-					<p>General pest control meant for all sort of  businesses, warehouses, production 
-						plant, restaurants, banks, hotels, household, offices etc. It’s a control 
-						against nuisance pest such as cockroaches, ants, termites, mosquitoes, rats 
-						and others. For some business it is a standard requirement for operational 
-						and licensing where hygiene, cleanliness and food contamination is an issue 
-						and is a stringent requirement for all food production and some ISO companies. 
-						Pest control operator like us, will have a signed contract (normally a year) 
-						servicing the client by applying chemical and non chemical measures. We will 
-						have a schedule time agreed by both party for effective treatment exercise.</p>
+			<div class="link-box" data-aos="flip-down" data-aos-delay="1000">
+				<div>
+					<p><a href="./services.html">S E R V I C E S | We may have the resources to help you.</a></p>
 				</div>
+			</div>
+
+			<div class="text-box">
+				<!--<p>Pest Link Sdn. Bhd. specializes in General Pest Control, Pre-Construction 
+					Anti Termite Treatment, Post-Construction Anti Termite Treatment, Fumigation 
+					MAFAS Services (ISPM 15 the international requirement for export commodities 
+					with Wood Packing Materials) and HACCP (Hazard Critical Control Point – 
+					a regulated requirement for food production and some ISO companies) services.</p>-->
+
+				<p>General pest control meant for all sort of  businesses, warehouses, production 
+					plant, restaurants, banks, hotels, household, offices etc. It’s a control 
+					against nuisance pest such as cockroaches, ants, termites, mosquitoes, rats 
+					and others. For some business it is a standard requirement for operational 
+					and licensing where hygiene, cleanliness and food contamination is an issue 
+					and is a stringent requirement for all food production and some ISO companies. 
+					Pest control operator like us, will have a signed contract (normally a year) 
+					servicing the client by applying chemical and non chemical measures. We will 
+					have a schedule time agreed by both party for effective treatment exercise.</p>
 			</div>
 		</div>
 	</div>
@@ -121,14 +125,39 @@
 	<div class="footer">
 		<!-- real time clock (based on time set on device) -->
 		<div id="clock"></div>
-		
+
 		<p><a href="./company-background.html">Company Background</a> | <a href="./services.html">
 			Our Expertise</a> | <a href="./pest.html">General Pest</a> | 
-			<a href="./contact-form.html">Contact Us</a>
-		<br><br>
-		<i>This website can be viewed in Microsoft Edge, IE, Safari, Firefox and Google 
+			<a href="./contact-form.html">Contact Us</a></p>
+		<div class="row">
+			<div class="column" style="width: 33.3%">
+				<p>M A I N
+				<br><br>Lot SH-2-5, 2nd floor, Block A, <br>Padimas Point, Jalan Pintas Penampang, <br>88300 Kota Kinabalu, Sabah.
+				<br><b>Tel:</b> 088 - 714895 / 738878
+				<br><b>Tel:</b> 012-8282182 (Ms Liew)
+				<br><b>Fax:</b> 088 - 714914
+				<br>pestlink@live.com</p>
+			</div>
+			<div class="column" style="width: 33.3%">
+				<p>T A W A U
+				<br><br>TB 12874 Taman Sejati, <br> Jalan Kuhara, <br>91000 Tawau, Sabah.
+				<br><b>Tel:</b> 017 – 8047277 (Mr Johamka)
+				<br>pestlink@live.com</p>
+			</div>
+			<div class="column" style="width: 33.3%">
+				<p>S A N D A K A N
+				<br><br>Lot 21, 1st floor, <br>Bandar Sibuga Jaya 2, <br> Batu 8 Jalan Labuk Sandakan, <br>9000 Sandakan, Sabah.
+				<br><b>Tel:</b> 012 - 802 8899 (Mr Gary)
+				<br>pestlink@live.com</p>
+			</div>
+		</div>
+		<p>
+			<i>This website can be viewed in Microsoft Edge, IE, Safari, Firefox and Google 
 			Chrome. It may, however, require Flash Plugin and javascript enabled.
-		<br>Copyright © 2018 - <i id="year"></i>. Pest Link Sdn Bhd | All Rights Reserved</p></i>
+			<br>Copyright © 2018 - <i id="year"></i>. Pest Link Sdn Bhd | All Rights Reserved</i>
+			<i style="float: right;">Web by: Priscilla Tham<br>
+			priscillatham@hotmail.com</i>
+		</p>
 	</div>
 
 	<script>

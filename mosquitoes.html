@@ -13,21 +13,22 @@
 <body onload="renderTime();">
 	<!-- header: include logo and navigation -->
 	<div class="header">
-		<a href="./index.html"><img id="logo" src="./images/logo.png"/></a>
+		<a href="./index.html"><img id="logo" src="./images/newlogo.png"/></a>
 		
-		<a class="pages" href="./index.html">Home</a>
-		<div class="dropdown">
-			<a class="dropbtn" href="javascript:void(0)">About</a>
+		<div class="page"><a href="./index.html">Home</a></div>
+		<div class="page">
+			<a href="javascript:void(0)">About</a>
 			<div class="options">
 				<a href="./company-background.html">Company Background</a>
 				<a href="./corporate-profile.html">Corporate Profile</a>
 				<a href="./company-policy.html">Company Health & Safety Policy</a>
-				<<!--a href="./customer-testimonial.html">Customer Testimonial</a>-->
+				<!--<a href="./customer-testimonial.html">Customer Testimonial</a>-->
 			</div>
 		</div>
-		<a class="pages" href="./services.html">Services</a>
-		<div class="dropdown">
-			<a class="dropbtn" href="./pest.html">Pest</a>
+
+		<div class="page"><a href="./services.html">Services</a></div>
+		<div class="page">
+			<a href="./pest.html">Pest</a>
 			<div class="options">
 				<a href="./ants.html">Ants</a>
 				<a href="./bed-bugs.html">Bed Bugs</a>
@@ -39,8 +40,9 @@
 				<a href="./termites.html">Termites</a>
 			</div>
 		</div>
-		<div class="dropdown">
-			<a class="dropbtn" href="javascript:void(0)">Contact</a>
+
+		<div class="page">
+			<a href="javascript:void(0)">Contact</a>
 			<div class="options">
 				<a href="./contact-form.html">Enquiry</a>
 				<a href="./location.html">Location</a>
@@ -50,100 +52,104 @@
 	</div>
 
 	<!--change headings/titles within the 'h1', 'h2', 'h3' tag-->
-	<h1>Mosquitoes</h1>
+	<!-- <h1>Mosquitoes</h1> -->
 
 	<!-- information box -->
-	<div data-aos="fade-right">
-		<div class="content-container">
-			<div class="content-box">
-				<h2 class="left-heading">Introduction</h2>
-				<!--update the DIRECT LINK within the src quote (source) 
-				to change the image-->
-				<img class="left-img" src="./images/m0.png" />
-				<div class="content-subbox" style="right: 0px">
-					<!-- . update text within the p quote
-						 . to break paragraphs (enter) use <br> twice
-						 . to form a new line use <br> once 
-						 . remember to press enter when the line gets too long
-						to ensure readability -->
-					<p>Mosquitoes are pesticides that bites human to consume blood and can 
-						transmit disease. Mosquitoes are insects that can be found anywhere 
-						in the forest, city, indoors, livestock farms etc. There are about 3450 
-						species and subspecies of mosquitoes that all belong to 38 genus. All 
-						belong to the Culicidae family, divided into three subfamilies: 
-						Toxorhynchitinae, Anophelinae, and Culcinae. Toxorhynchites also called 
-						elephant mosquito or mosquito eater, is a genus of diurnal and often 
-						relatively colorful mosquitoes  Anopheles contains the mosquitoes that 
-						transmit malarial parasites to humans and other animals. Some species of 
-						Anopheles also transmit microfilariae and arboviruses. Culcinae include 
-						the Aedes sp. That can transmit dengue virus. Female mosquitoes suck our 
-						blood. Male mosquitoes feed on plant nectars. They can develop from egg 
-						to adult in 10 to 14 days. They are most active from dusk to dawn and 
-						will fly up to 14 miles for a blood meal.</p>
-				</div>
+	<div class="content-container" data-aos="fade-right">
+		<div class="content-box">
+			<div class="heading-box">
+					<p class="heading">I N T R O D U C T I O N</p>
+			</div>
+			<!--update the DIRECT LINK within the src quote (source) 
+			to change the image-->
+			<div class="title-img">
+				<img src="./images/m0.png" />
+			</div> 
+
+			<div class="text-box flex">
+				<!-- . update text within the p quote
+						. to break paragraphs (enter) use <br> twice
+						. to form a new line use <br> once 
+						. remember to press enter when the line gets too long
+					to ensure readability -->
+				<p>
+					Mosquitoes are pesticides that bites human to consume blood and can transmit disease. Mosquitoes are insects that can be found anywhere in the forest, city, indoors, livestock farms etc. There are about 3450 species and subspecies of mosquitoes that all belong to 38 genus. All belong to the Culicidae family, divided into three subfamilies: Toxorhynchitinae, Anophelinae, and Culcinae. Toxorhynchites also called elephant mosquito or mosquito eater, is a genus of diurnal and often 
+					relatively colorful mosquitoes  Anopheles contains the mosquitoes that transmit malarial parasites to humans and other animals. Some species of Anopheles also transmit microfilariae and arboviruses. Culcinae include the Aedes sp. That can transmit dengue virus. Female mosquitoes suck our 
+					blood. Male mosquitoes feed on plant nectars. They can develop from egg to adult in 10 to 14 days. They are most active from dusk to dawn and will fly up to 14 miles for a blood meal.
+				</p>
 			</div>
 		</div>
 	</div>
 
-	<div data-aos="fade-right">
-		<div class="content-container">
-			<div class="content-box">
-				<h2 class="right-heading">Reasons mosquitoes are considered as pests</h2>
-				<img class="right-img" src="./images/m1.png" />
-				<div class="content-subbox" style="left: 0px;">
-					<!-- . use ol quote to form a numbered list
-						 . use ul quote to form a bullet list-->
-					<ol>
-						<li>Become a vector of diseases such as Dengue, Malaria, and 
-							Filariasis.</li>
-						<li>Bite and sucks human blood and animals.</li>
-					</ol>
-				</div>
+	<div class="content-container" data-aos="fade-right">
+		<div class="content-box">
+			<div class="heading-box">
+					<p class="heading">W H Y&nbsp;&nbsp;M O S Q U I T O E S<br>A R E<br>P E S T</p>
+			</div>
+			
+			<div class="title-img">
+				<img src="./images/m1.png" />
+			</div> 
+
+			<div class="text-box flex">
+				<ol>
+					<li>Become a vector of diseases such as Dengue, Malaria, and 
+						Filariasis.</li>
+					<li>Bite and sucks human blood and animals.</li>
+				</ol>
 			</div>
 		</div>
 	</div>
 
-	<div data-aos="fade-right">
-		<div class="content-container">
-			<div class="content-box">
-				<h2 class="left-heading">Areas mosquitoes are found</h2>
-				<img class="left-img" src="./images/m2.png" />
-				<div class="content-subbox" style="right: 0px">
-					<ol>
-						<li>In the reservoir areas that become the breeding ground.</li>
-						<li>Brackish coastal water to freshwater inland areas, especially 
-							mangroves, paddy fields, trenches, puddles, and ponds.</li>
-						<li>Stagnant water</li>
-					</ol>
-				</div>
+	<div class="content-container" data-aos="fade-right">
+		<div class="content-box">
+			<div class="heading-box">
+					<p class="heading">F I N D&nbsp;&nbsp; M O S Q U I T O E S<br>A T</p>
+			</div>
+
+			<div class="title-img">
+				<img src="./images/m2.png" />
+			</div> 
+
+			<div class="text-box flex">	
+				<ol>
+					<li>In the reservoir areas that become the breeding ground.</li>
+					<li>Brackish coastal water to freshwater inland areas, especially 
+						mangroves, paddy fields, trenches, puddles, and ponds.</li>
+					<li>Stagnant water</li>
+				</ol>
 			</div>
 		</div>
 	</div>
 
-	<div data-aos="fade-right">
-		<div class="content-container">
-			<div class="content-box">
-				<h2 class="right-heading">Treatments</h2>
-				<img class="right-img" src="./images/m3.png" />
-				<div class="content-subbox" style="left: 0px;">
-					<ol>
-						<li>Reducing resources of habitat and environmental management (Clean 
-							the area; get rids of stagnant water)</li>
-						<li>Biological control - Using Bacillus thuringiensis and Bacillus 
-							sphaericus which contains spores that produce toxins that 
-							specifically target and only 	affect the larvae of the mosquito. 
-							Introduce mosquito-eating fish such as 	gambusia, green sunfish, 
-							bluegills and minnows to standing water</li>
-						<li>Chemical Control- The use of insecticides and Insect Growth 
-							Regulators (IGR 	which can be divided into juvenile hormones 
-							and chitin synthetic inhibitors)</li>
-						<li>Physical attachment and self-protection - mosquito nets treated 
-							with insecticides, insecticides (aerosols, electric mats, and 
-							liquid evaporators), 	mosquito repellents and body insect 
-							repellents.</li>
-						<li>Integrated Pest Management.</li>
-					</ol>
-				</div>
+	<div class="content-container" data-aos="fade-right">
+		<div class="content-box">
+			<div class="heading-box">
+					<p class="heading">T R E A T M E N T S</p>
+			</div>
+			
+			<div class="title-img">
+				<img src="./images/m3.png" />
+			</div> 
+
+			<div class="text-box flex">
+				<ol>
+					<li>Reducing resources of habitat and environmental management (Clean 
+						the area; get rids of stagnant water)</li>
+					<li>Biological control - Using Bacillus thuringiensis and Bacillus 
+						sphaericus which contains spores that produce toxins that 
+						specifically target and only 	affect the larvae of the mosquito. 
+						Introduce mosquito-eating fish such as 	gambusia, green sunfish, 
+						bluegills and minnows to standing water</li>
+					<li>Chemical Control- The use of insecticides and Insect Growth 
+						Regulators (IGR 	which can be divided into juvenile hormones 
+						and chitin synthetic inhibitors)</li>
+					<li>Physical attachment and self-protection - mosquito nets treated 
+						with insecticides, insecticides (aerosols, electric mats, and 
+						liquid evaporators), 	mosquito repellents and body insect 
+						repellents.</li>
+					<li>Integrated Pest Management.</li>
+				</ol>
 			</div>
 		</div>
 	</div>
@@ -152,14 +158,39 @@
 	<div class="footer">
 		<!-- real time clock (based on time set on device) -->
 		<div id="clock"></div>
-		
+
 		<p><a href="./company-background.html">Company Background</a> | <a href="./services.html">
 			Our Expertise</a> | <a href="./pest.html">General Pest</a> | 
-			<a href="./contact-form.html">Contact Us</a>
-		<br><br>
-		<i>This website can be viewed in Microsoft Edge, IE, Safari, Firefox and Google 
+			<a href="./contact-form.html">Contact Us</a></p>
+		<div class="row">
+			<div class="column" style="width: 33.3%">
+				<p>M A I N
+				<br><br>Lot SH-2-5, 2nd floor, Block A, <br>Padimas Point, Jalan Pintas Penampang, <br>88300 Kota Kinabalu, Sabah.
+				<br><b>Tel:</b> 088 - 714895 / 738878
+				<br><b>Tel:</b> 012-8282182 (Ms Liew)
+				<br><b>Fax:</b> 088 - 714914
+				<br>pestlink@live.com</p>
+			</div>
+			<div class="column" style="width: 33.3%">
+				<p>T A W A U
+				<br><br>TB 12874 Taman Sejati, <br> Jalan Kuhara, <br>91000 Tawau, Sabah.
+				<br><b>Tel:</b> 017 – 8047277 (Mr Johamka)
+				<br>pestlink@live.com</p>
+			</div>
+			<div class="column" style="width: 33.3%">
+				<p>S A N D A K A N
+				<br><br>Lot 21, 1st floor, <br>Bandar Sibuga Jaya 2, <br> Batu 8 Jalan Labuk Sandakan, <br>9000 Sandakan, Sabah.
+				<br><b>Tel:</b> 012 - 802 8899 (Mr Gary)
+				<br>pestlink@live.com</p>
+			</div>
+		</div>
+		<p>
+			<i>This website can be viewed in Microsoft Edge, IE, Safari, Firefox and Google 
 			Chrome. It may, however, require Flash Plugin and javascript enabled.
-		<br>Copyright © 2018 - <i id="year"></i>. Pest Link Sdn Bhd | All Rights Reserved</p></i>
+			<br>Copyright © 2018 - <i id="year"></i>. Pest Link Sdn Bhd | All Rights Reserved</i>
+			<i style="float: right;">Web by: Priscilla Tham<br>
+			priscillatham@hotmail.com</i>
+		</p>
 	</div>
 
 	<script>

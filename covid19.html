@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie-edge">
+	<link href="style.css" type="text/css" rel="stylesheet" >
+	<link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+	<title>Covid-19 Disinfection</title>
+</head>
+	
+<body onload="renderTime();">
+	<!-- header: include logo and navigation -->
+	<div class="header">
+		<a href="./index.html"><img id="logo" src="./images/newlogo.png"/></a>
+		
+		<div class="page"><a href="./index.html">Home</a></div>
+		<div class="page">
+			<a href="javascript:void(0)">About</a>
+			<div class="options">
+				<a href="./company-background.html">Company Background</a>
+				<a href="./corporate-profile.html">Corporate Profile</a>
+				<a href="./company-policy.html">Company Health & Safety Policy</a>
+				<!--<a href="./customer-testimonial.html">Customer Testimonial</a>-->
+			</div>
+		</div>
+
+		<div class="page"><a href="./services.html">Services</a></div>
+		<div class="page">
+			<a href="./pest.html">Pest</a>
+			<div class="options">
+				<a href="./ants.html">Ants</a>
+				<a href="./bed-bugs.html">Bed Bugs</a>
+				<a href="./cockroaches.html">Cockroaches</a>
+				<a href="./flies.html">Flies</a>
+				<a href="./mosquitoes.html">Mosquitoes</a>
+				<a href="./rodents.html">Rodents</a>
+				<a href="./storage-pest.html">Storage Pest</a>
+				<a href="./termites.html">Termites</a>
+			</div>
+		</div>
+
+		<div class="page">
+			<a href="javascript:void(0)">Contact</a>
+			<div class="options">
+				<a href="./contact-form.html">Enquiry</a>
+				<a href="./location.html">Location</a>
+				<a href="./career.html">Career</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- information box -->
+	<div class="content-container">
+		<div class="content-box">
+			<div class="heading-box">
+				<p class="heading">COVID<br>-19<br>D I S I N F E C T I O N</p>
+			</div>
+			
+			<div class="title-img">
+				<img src="./images/c191.jpg" />
+			</div>
+			
+			<div class="side-img3">
+				<img src="./images/c192.jpg" />
+			</div>
+
+            <div class="side-img1">
+				<img src="./images/c193.jpg" />
+			</div>
+
+			<div class="side-img2">
+				<img src="./images/c194.jpg" />
+			</div>
+		</div>
+	</div>
+
+	<script>
+		let slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+		  showSlides(slideIndex += n); 
+		}
+
+		function showSlides(n) {
+		  let i;
+		  let x = document.getElementsByClassName("content-box");
+		  if (n > x.length) {slideIndex = 1}    
+		  if (n < 1) {slideIndex = x.length}
+		  for (i = 0; i < x.length; i++) {
+		      x[i].style.display = "none";  
+		  }
+
+		  x[slideIndex-1].style.display = "block";
+		}
+	</script>
+
+	<!-- footer: include short links, claims and credits -->
+	<div class="footer">
+		<!-- real time clock (based on time set on device) -->
+		<div id="clock"></div>
+
+		<p><a href="./company-background.html">Company Background</a> | <a href="./services.html">
+			Our Expertise</a> | <a href="./pest.html">General Pest</a> | 
+			<a href="./contact-form.html">Contact Us</a></p>
+		<div class="row">
+			<div class="column" style="width: 33.3%">
+				<p>M A I N
+				<br><br>Lot SH-2-5, 2nd floor, Block A, <br>Padimas Point, Jalan Pintas Penampang, <br>88300 Kota Kinabalu, Sabah.
+				<br><b>Tel:</b> 088 - 714895 / 738878
+				<br><b>Tel:</b> 012-8282182 (Ms Liew)
+				<br><b>Fax:</b> 088 - 714914
+				<br>pestlink@live.com</p>
+			</div>
+			<div class="column" style="width: 33.3%">
+				<p>T A W A U
+				<br><br>TB 12874 Taman Sejati, <br> Jalan Kuhara, <br>91000 Tawau, Sabah.
+				<br><b>Tel:</b> 017 – 8047277 (Mr Johamka)
+				<br>pestlink@live.com</p>
+			</div>
+			<div class="column" style="width: 33.3%">
+				<p>S A N D A K A N
+				<br><br>Lot 21, 1st floor, <br>Bandar Sibuga Jaya 2, <br> Batu 8 Jalan Labuk Sandakan, <br>9000 Sandakan, Sabah.
+				<br><b>Tel:</b> 012 - 802 8899 (Mr Gary)
+				<br>pestlink@live.com</p>
+			</div>
+		</div>
+		<p>
+			<i>This website can be viewed in Microsoft Edge, IE, Safari, Firefox and Google 
+			Chrome. It may, however, require Flash Plugin and javascript enabled.
+			<br>Copyright © 2018 - <i id="year"></i>. Pest Link Sdn Bhd | All Rights Reserved</i>
+			<i style="float: right;">Web by: Priscilla Tham<br>
+			priscillatham@hotmail.com</i>
+		</p>
+	</div>
+
+	<script>
+		function renderTime() {
+			var currentDate = new Date();
+			var year = currentDate.getYear();
+			if (year < 1000) {
+				year += 1900;
+			}
+			var month = currentDate.getMonth();
+			var date = currentDate.getDate();
+			var montharray = new Array("January", "February", "March", "April", "May", 
+			"June", "July", "August", "September", "October", "November", "December");
+
+			var currentTime = new Date()
+			var h = currentTime.getHours();
+			var m = currentTime.getMinutes();
+			var s = currentTime.getSeconds();
+			var session = "AM"
+			if(h == 24) {
+				h = 12;
+				session = "AM";
+			}
+
+			if (h == 12) {
+				session = "PM";
+			}
+
+			if (h > 12) {
+				h -= 12;
+				session = "PM";
+			}
+
+			if (h < 10) {
+				h = "0" + h;
+			}
+
+
+			if (m < 10) {
+				m = "0" + m;
+			}
+
+
+			if (s < 10) {
+				s = "0" + s;
+			}
+
+			var yearDisplay = document.getElementById("year");
+			yearDisplay.innerText = year;
+
+			var display = document.getElementById("clock");
+
+			display.innerText = montharray[month] + " " + date + ", " + year + " | " + h 
+			+ ":" + m + ":" + s + " " + session;
+			display.textContent = montharray[month] + " " + date + ", " + year + " | " + 
+			h + ":" + m + ":" + s + " " + session;
+			setTimeout("renderTime()", 1000);
+		}
+
+		renderTime();
+	</script>
+</body>
+</html>
+</body>
+</html>
+

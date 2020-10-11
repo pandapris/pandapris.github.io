@@ -13,12 +13,11 @@
 <body onload="renderTime();">
 	<!-- header: include logo and navigation -->
 	<div class="header">
-		<a href="./index.html"><img id="logo" src="./images/logo.png"/></a>
+		<a href="./index.html"><img id="logo" src="./images/newlogo.png"/></a>
 		
-		<a class="pages" href="./index.html">Home</a>
-		<div class="dropdown">
-			<a class="dropbtn" href="javascript:void(0)">About</a>
-		
+		<div class="page"><a href="./index.html">Home</a></div>
+		<div class="page">
+			<a href="javascript:void(0)">About</a>
 			<div class="options">
 				<a href="./company-background.html">Company Background</a>
 				<a href="./corporate-profile.html">Corporate Profile</a>
@@ -26,9 +25,10 @@
 				<!--<a href="./customer-testimonial.html">Customer Testimonial</a>-->
 			</div>
 		</div>
-		<a class="pages" href="./services.html">Services</a>
-		<div class="dropdown">
-			<a class="dropbtn" href="./pest.html">Pest</a>
+
+		<div class="page"><a href="./services.html">Services</a></div>
+		<div class="page">
+			<a href="./pest.html">Pest</a>
 			<div class="options">
 				<a href="./ants.html">Ants</a>
 				<a href="./bed-bugs.html">Bed Bugs</a>
@@ -40,119 +40,139 @@
 				<a href="./termites.html">Termites</a>
 			</div>
 		</div>
-		<div class="dropdown">
-			<a class="dropbtn" href="javascript:void(0)">Contact</a>
+
+		<div class="page">
+			<a href="javascript:void(0)">Contact</a>
 			<div class="options">
 				<a href="./contact-form.html">Enquiry</a>
-				<a href="./location.html">Location<a>
+				<a href="./location.html">Location</a>
 				<a href="./career.html">Career</a>
 			</div>
 		</div>
 	</div>
-
+	
 	<!--change headings/titles within the 'h1', 'h2', 'h3' tag-->
-	<h1>Rodents</h1>
+	<!-- <h1>Rodents</h1> -->
 
 	<!-- information box -->
-	<div data-aos="fade-right">
-		<div class="content-container">
-			<div class="content-box">
-				<h2 class="left-heading">Introduction</h2>
-				<!--update the DIRECT LINK within the src quote (source) 
-				to change the image-->
-				<img class="left-img" src="./images/r0.png" />
-				<div class="content-subbox" style="right: 0px">
-					<!-- . update text within the p quote
-						 . to break paragraphs (enter) use <br> twice
-						 . to form a new line use <br> once 
-						 . remember to press enter when the line gets too long
-						to ensure readability -->
-					<p>Rats and mice often cause great problems to humans and are the most 
-						dangerous contagious enemies. This is because, rodent brings various germs 
-						and diseases. The  most common species found in Malaysia are Norwegian 
-						rats (Rattus norvegicus), roof rats (Rattus rattus), and home mice 
-						(Mus musculus).</p>
-				</div>
+	<div class="content-container" data-aos="fade-right">
+		<div class="content-box">
+			<div class="heading-box">
+					<p class="heading">I N T R O D U C T I O N</p>
+			</div>
+			<!--update the DIRECT LINK within the src quote (source) 
+			to change the image-->
+			<div class="title-img">
+				<img src="./images/r0.png" />
+			</div> 
+
+			<div class="text-box flex">
+				<!-- . update text within the p quote
+						. to break paragraphs (enter) use <br> twice
+						. to form a new line use <br> once 
+						. remember to press enter when the line gets too long
+					to ensure readability -->
+				<p>
+					Rats and mice often cause great problems to humans and are the most 
+					dangerous contagious enemies. This is because, rodent brings various germs 
+					and diseases. The  most common species found in Malaysia are Norwegian 
+					rats (Rattus norvegicus), roof rats (Rattus rattus), and home mice 
+					(Mus musculus).
+				</p>
 			</div>
 		</div>
 	</div>
 
-	<div data-aos="fade-right">
-		<div class="content-container">
-			<div class="content-box">
-				<h2 class="right-heading">Reasons rodents considered as pests</h2>
-				<img class="right-img" src="./images/r1.jpeg" />
-				<div class="content-subbox" style="left: 0px;">
-					<!-- . use ol quote to form a numbered list
-						 . use ul quote to form a bullet list-->
-					<ol>
-						<li>Destroy property by biting woodwork and other parts of building 
-							structure</li>
-						<li>Bite the electrical wiring that can result in fire</li>
-						<li>Bring various germs and diseases such as epidemics, jaundice, 
-							food poisoning, etc.</li>
-					</ol>
-				</div>
+	<div class="content-container" data-aos="fade-right">
+		<div class="content-box">
+			<div class="heading-box">
+					<p class="heading">W H Y&nbsp;&nbsp;R O D E N T S<br>A R E<br>P E S T</p>
+			</div>
+			
+			<div class="title-img">
+				<img src="./images/r1.jpeg" />
+			</div> 
+
+			<div class="text-box flex">
+				<ol>
+					<li>Destroy property by biting woodwork and other parts of building 
+						structure</li>
+					<li>Bite the electrical wiring that can result in fire</li>
+					<li>Bring various germs and diseases such as epidemics, jaundice, 
+						food poisoning, etc.</li>
+				</ol>
 			</div>
 		</div>
 	</div>
 
-	<div data-aos="fade-right">
-		<div class="content-container">
-			<div class="content-box">
-				<h2 class="left-heading">Areas rodents are found</h2>
-				<img class="left-img" src="./images/r2.png" />
-				<div class="content-subbox" style="right: 0px">
-					<ol>
-						<li>Nigerian rats live on the beach, moving along the river from one 
-							settlement to one settlement. This rat breeds at garbage dumps 
-							and sewers. Also available in the basement.</li>
-						<li>Malaysian house mice can be found in buildings especially in 
-							roof areas.</li>
-						<li>The habitat of a house rats such as Polynesian rats (Rattus exulans) 
-							is commonly found in villages and in farms.</li>
-						<li>House Shrew in Malaysia (Suncus murinus) can be found in trenches, 
-							home gardens, and outdoors.</li>
-					</ol>
-				</div>
+	<div class="content-container" data-aos="fade-right">
+		<div class="content-box">
+			<div class="heading-box">
+					<p class="heading">F I N D&nbsp;&nbsp; R O D E N T S<br>A T</p>
+			</div>
+
+			<div class="title-img">
+				<img src="./images/r2.png" />
+			</div> 
+
+			<div class="text-box flex">	
+				<ol>
+					<li>Nigerian rats live on the beach, moving along the river from one 
+						settlement to one settlement. This rat breeds at garbage dumps 
+						and sewers. Also available in the basement.</li>
+					<li>Malaysian house mice can be found in buildings especially in 
+						roof areas.</li>
+					<li>The habitat of a house rats such as Polynesian rats (Rattus exulans) 
+						is commonly found in villages and in farms.</li>
+					<li>House Shrew in Malaysia (Suncus murinus) can be found in trenches, 
+						home gardens, and outdoors.</li>
+				</ol>
 			</div>
 		</div>
 	</div>
 
-	<div data-aos="fade-right">
-		<div class="content-container">
-			<div class="content-box">
-				<h2 class="right-heading">Detection and supervision of rodent</h2>
-				<img class="right-img" src="./images/r3.png" />
-				<div class="content-subbox" style="left: 0px;">
-					<ol>
-						<li>Feces</li>
-						<li>Greasy and dark marking trails</li>
-						<li>Footsteps and tails</li>
-						<li>Signs of damage</li>
-						<li>Holes and nests</li>
-					</ol>
-				</div>
+	<div class="content-container" data-aos="fade-right">
+		<div class="content-box">
+			<div class="heading-box">
+					<p class="heading">D E T E C T I O N&nbsp;&nbsp;&<br>S U P E R V I S I O N</p>
+			</div>
+			
+			<div class="title-img">
+				<img src="./images/r3.png" />
+			</div> 
+
+			<div class="text-box flex">
+				<ol>
+					<li>Feces</li>
+					<li>Greasy and dark marking trails</li>
+					<li>Footsteps and tails</li>
+					<li>Signs of damage</li>
+					<li>Holes and nests</li>
+				</ol>
 			</div>
 		</div>
 	</div>
 
-	<div data-aos="fade-right">
-		<div class="content-container">
-			<div class="content-box">
-				<h2 class="left-heading">Treatment</h2>
-				<img class="left-img" src="./images/r4.jpeg" />
-				<div class="content-subbox" style="right: 0px;">
-					<ol>
-						<li>Sanitation - Environmental management by cleaning up food waste 
-							and disposing of garbage.</li>
-						<li>Catching and trapping.</li>
-						<li>Physical and prevention control- seal up any holes or cracks 
-							larger than a quarter. Remove sources of moisture and harborage.</li>
-						<li>Chemical - food form, granules, candles, liquids, touch powder, 
-							and toxic gases (fumigation).</li>
-					</ol>
-				</div>
+	<div class="content-container" data-aos="fade-right">
+		<div class="content-box">
+			<div class="heading-box">
+					<p class="heading">T R E A T M E N T S</p>
+			</div>
+			
+			<div class="title-img">
+				<img src="./images/r4.jpeg" />
+			</div> 
+
+			<div class="text-box flex">
+				<ol>
+					<li>Sanitation - Environmental management by cleaning up food waste 
+						and disposing of garbage.</li>
+					<li>Catching and trapping.</li>
+					<li>Physical and prevention control- seal up any holes or cracks 
+						larger than a quarter. Remove sources of moisture and harborage.</li>
+					<li>Chemical - food form, granules, candles, liquids, touch powder, 
+						and toxic gases (fumigation).</li>
+				</ol>
 			</div>
 		</div>
 	</div>
@@ -161,14 +181,39 @@
 	<div class="footer">
 		<!-- real time clock (based on time set on device) -->
 		<div id="clock"></div>
-		
+
 		<p><a href="./company-background.html">Company Background</a> | <a href="./services.html">
 			Our Expertise</a> | <a href="./pest.html">General Pest</a> | 
-			<a href="./contact-form.html">Contact Us</a>
-		<br><br>
-		<i>This website can be viewed in Microsoft Edge, IE, Safari, Firefox and Google 
+			<a href="./contact-form.html">Contact Us</a></p>
+		<div class="row">
+			<div class="column" style="width: 33.3%">
+				<p>M A I N
+				<br><br>Lot SH-2-5, 2nd floor, Block A, <br>Padimas Point, Jalan Pintas Penampang, <br>88300 Kota Kinabalu, Sabah.
+				<br><b>Tel:</b> 088 - 714895 / 738878
+				<br><b>Tel:</b> 012-8282182 (Ms Liew)
+				<br><b>Fax:</b> 088 - 714914
+				<br>pestlink@live.com</p>
+			</div>
+			<div class="column" style="width: 33.3%">
+				<p>T A W A U
+				<br><br>TB 12874 Taman Sejati, <br> Jalan Kuhara, <br>91000 Tawau, Sabah.
+				<br><b>Tel:</b> 017 – 8047277 (Mr Johamka)
+				<br>pestlink@live.com</p>
+			</div>
+			<div class="column" style="width: 33.3%">
+				<p>S A N D A K A N
+				<br><br>Lot 21, 1st floor, <br>Bandar Sibuga Jaya 2, <br> Batu 8 Jalan Labuk Sandakan, <br>9000 Sandakan, Sabah.
+				<br><b>Tel:</b> 012 - 802 8899 (Mr Gary)
+				<br>pestlink@live.com</p>
+			</div>
+		</div>
+		<p>
+			<i>This website can be viewed in Microsoft Edge, IE, Safari, Firefox and Google 
 			Chrome. It may, however, require Flash Plugin and javascript enabled.
-		<br>Copyright © 2018 - <i id="year"></i>. Pest Link Sdn Bhd | All Rights Reserved</p></i>
+			<br>Copyright © 2018 - <i id="year"></i>. Pest Link Sdn Bhd | All Rights Reserved</i>
+			<i style="float: right;">Web by: Priscilla Tham<br>
+			priscillatham@hotmail.com</i>
+		</p>
 	</div>
 
 	<script>
